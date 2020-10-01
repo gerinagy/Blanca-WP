@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html <?php language_attribute(); ?>>
+<html <?php language_attributes(); ?>>
 
 <head>
     <!-- Required meta tags -->
     <meta charset="<?php bloginfo('charset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="./css/swiper.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="./style.css">
 
     <?php wp_head();?>
 
