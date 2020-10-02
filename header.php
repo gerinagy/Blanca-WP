@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="<?php bloginfo('charset')?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
 
     <?php wp_head();?>
@@ -18,7 +19,16 @@
                 <div class="row">
                     <div class="col-lg-6 flex align-items-center">
                         <div class="header-bar-text d-none d-lg-block">
-                            <p>Hello world, My name is Blanca</p>
+                            <!-- <p>Hello world, My name is Blanca</p> -->
+                            <?php
+                            if(function_exists('the_custom_logo')){
+                                the_custom_logo();
+                            }
+                            else{
+                                bloginfo('name');
+                            }
+                            ?>
+                                
                         </div><!-- .header-bar-text -->
 
                         <div class="header-bar-email d-none d-lg-block">
